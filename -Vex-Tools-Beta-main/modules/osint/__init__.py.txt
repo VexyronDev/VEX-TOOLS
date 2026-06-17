@@ -1,0 +1,13 @@
+from .phone import phone_lookup
+from .email import email_lookup
+
+class OsintTools:
+    @staticmethod
+    def phone():
+        from .phone import phone_lookup as _phone_lookup
+        _phone_lookup()
+    
+    @staticmethod
+    def email():
+        from .email import email_lookup as _email_lookup
+        _email_lookup()
